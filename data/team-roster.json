@@ -1,0 +1,327 @@
+[
+    {
+        "_id": 1,
+        "img_name": "jalenmiloreheadshot.png",
+        "name": "Jalen Milroe",
+        "position": "Quarterback",
+        "number": 4,
+        "location": "Katy, TX",
+        "stats": [
+            "Height: 6'2\"",
+            "Weight: 220 lbs",
+            "Year: Sophomore"
+        ]
+    },
+    {
+        "_id": 2,
+        "img_name": "startingrb.png",
+        "name": "Justice Haynes",
+        "position": "Running Back",
+        "number": 22,
+        "location": "Roswell, GA",
+        "stats": [
+            "Height: 5'11\"",
+            "Weight: 205 lbs",
+            "Year: Freshman"
+        ]
+    },
+    {
+        "_id": 3,
+        "img_name": "germiebernard.webp",
+        "name": "Germie Bernard",
+        "position": "Wide Receiver",
+        "number": 11,
+        "location": "Henderson, NV",
+        "stats": [
+            "Height: 6'0\"",
+            "Weight: 190 lbs",
+            "Year: Sophomore"
+        ]
+    },
+    {
+        "_id": 4,
+        "img_name": "ryanwill.png",
+        "name": "Ryan Williams",
+        "position": "Wide Receiver",
+        "number": 18,
+        "location": "Alabama",
+        "stats": [
+            "Height: 6'1\"",
+            "Weight: 195 lbs",
+            "Year: Freshman"
+        ]
+    },
+    {
+        "_id": 5,
+        "img_name": "kendricklaw.png",
+        "name": "Kendrick Law",
+        "position": "Wide Receiver",
+        "number": 19,
+        "location": "Shreveport, LA",
+        "stats": [
+            "Height: 6'1\"",
+            "Weight: 200 lbs",
+            "Year: Sophomore"
+        ]
+    },
+    {
+        "_id": 6,
+        "img_name": "kproctor.png",
+        "name": "Kadyn Proctor",
+        "position": "Left Tackle",
+        "number": 74,
+        "location": "Des Moines, IA",
+        "stats": [
+            "Height: 6'7\"",
+            "Weight: 330 lbs",
+            "Year: Freshman"
+        ]
+    },
+    {
+        "_id": 7,
+        "img_name": "tylerbroker.png",
+        "name": "Tyler Booker",
+        "position": "Left Guard",
+        "number": 75,
+        "location": "New Haven, CT",
+        "stats": [
+            "Height: 6'5\"",
+            "Weight: 325 lbs",
+            "Year: Sophomore"
+        ]
+    },
+    {
+        "_id": 8,
+        "img_name": "parkerB.webp",
+        "name": "Parker Brailsford",
+        "position": "Center",
+        "number": 51,
+        "location": "Mesa, AZ",
+        "stats": [
+            "Height: 6'3\"",
+            "Weight: 290 lbs",
+            "Year: Junior"
+        ]
+    },
+    {
+        "_id": 9,
+        "img_name": "Jaeden-Roberts-OL-Alabama.png",
+        "name": "Jaeden Roberts",
+        "position": "Right Guard",
+        "number": 70,
+        "location": "Houston, TX",
+        "stats": [
+            "Height: 6'5\"",
+            "Weight: 330 lbs",
+            "Year: Junior"
+        ]
+    },
+    {
+        "_id": 10,
+        "img_name": "formby.png",
+        "name": "Wilkin Formby",
+        "position": "Right Tackle",
+        "number": 77,
+        "location": "Tuscaloosa, AL",
+        "stats": [
+            "Height: 6'7\"",
+            "Weight: 315 lbs",
+            "Year: Freshman"
+        ]
+    },
+    {
+        "_id": 11,
+        "img_name": "i.png",
+        "name": "CJ Dippre",
+        "position": "Tight End",
+        "number": 81,
+        "location": "Scranton, PA",
+        "stats": [
+            "Height: 6'5\"",
+            "Weight: 260 lbs",
+            "Year: Junior"
+        ]
+    },
+    {
+        "_id": 12,
+        "img_name": "Jah-Marien Latham .png",
+        "name": "Jah-Marien Latham",
+        "position": "Bandit",
+        "number": 55,
+        "location": "Reform, AL",
+        "stats": [
+            "Height: 6'3\"",
+            "Weight: 285 lbs",
+            "Year: Junior"
+        ]
+    },
+    {
+        "_id": 13,
+        "img_name": "Keon Keeley .png",
+        "name": "Keon Keeley",
+        "position": "Bandit",
+        "number": 95,
+        "location": "Tampa, FL",
+        "stats": [
+            "Height: 6'6\"",
+            "Weight: 242 lbs",
+            "Year: Freshman"
+        ]
+    },
+    {
+        "_id": 14,
+        "img_name": "Tim Kennan III .png",
+        "name": "Tim Kennan III",
+        "position": "Nose Tackle",
+        "number": 96,
+        "location": "Birmingham, AL",
+        "stats": [
+            "Height: 6'2\"",
+            "Weight: 330 lbs",
+            "Year: Sophomore"
+        ]
+    },
+    {
+        "_id": 15,
+        "img_name": "Jaheim-Oatis-DL-Alabama.png",
+        "name": "Jehiem Oatis",
+        "position": "Defensive Tackle",
+        "number": 92,
+        "location": "Columbia, MS",
+        "stats": [
+            "Height: 6'5\"",
+            "Weight: 370 lbs",
+            "Year: Sophomore"
+        ]
+    },
+    {
+        "_id": 16,
+        "img_name": "Tim-Smith-DL-Alabama.png",
+        "name": "Tim Smith",
+        "position": "Defensive End",
+        "number": 50,
+        "location": "Gifford, FL",
+        "stats": [
+            "Height: 6'4\"",
+            "Weight: 302 lbs",
+            "Year: Junior"
+        ]
+    },
+    {
+        "_id": 17,
+        "img_name": "James Smith .png",
+        "name": "James Smith",
+        "position": "Defensive End",
+        "number": 47,
+        "location": "Montgomery, AL",
+        "stats": [
+            "Height: 6'3\"",
+            "Weight: 310 lbs",
+            "Year: Freshman"
+        ]
+    },
+    {
+        "_id": 18,
+        "img_name": "Deontae-Lawson-LB-Alabama.png",
+        "name": "Deontae Lawson",
+        "position": "Mike Linebacker",
+        "number": 32,
+        "location": "Mobile, AL",
+        "stats": [
+            "Height: 6'2\"",
+            "Weight: 230 lbs",
+            "Year: Junior"
+        ]
+    },
+    {
+        "_id": 19,
+        "img_name": "Jihaad Campbell .png",
+        "name": "Jihaad Campbell",
+        "position": "Sting Linebacker",
+        "number": 33,
+        "location": "Englewood, NJ",
+        "stats": [
+            "Height: 6'3\"",
+            "Weight: 230 lbs",
+            "Year: Sophomore"
+        ]
+    },
+    {
+        "_id": 20,
+        "img_name": "Quandarrius Robinson .png",
+        "name": "Quandarrius Robinson",
+        "position": "Wolf Linebacker",
+        "number": 34,
+        "location": "Birmingham, AL",
+        "stats": [
+            "Height: 6'5\"",
+            "Weight: 235 lbs",
+            "Year: Junior"
+        ]
+    },
+    {
+        "_id": 21,
+        "img_name": "Domani Jackson .png",
+        "name": "Domani Jackson",
+        "position": "Cornerback",
+        "number": 3,
+        "location": "Santa Ana, CA",
+        "stats": [
+            "Height: 6'1\"",
+            "Weight: 185 lbs",
+            "Year: Sophomore"
+        ]
+    },
+    {
+        "_id": 22,
+        "img_name": "Jahlil Hurley .png",
+        "name": "Jahlil Hurley",
+        "position": "Cornerback",
+        "number": 24,
+        "location": "Florence, AL",
+        "stats": [
+            "Height: 6'2\"",
+            "Weight: 190 lbs",
+            "Year: Freshman"
+        ]
+    },
+    {
+        "_id": 23,
+        "img_name": "Malachi-Moore-DB-Alabama.png",
+        "name": "Malachi Moore",
+        "position": "Rover (Strong Safety)",
+        "number": 13,
+        "location": "Trussville, AL",
+        "stats": [
+            "Height: 6'0\"",
+            "Weight: 195 lbs",
+            "Year: Senior"
+        ]
+    },
+    {
+        "_id": 24,
+        "img_name": "Keon Sabb .png",
+        "name": "Keon Sabb",
+        "position": "Free Safety",
+        "number": 21,
+        "location": "Glassboro, NJ",
+        "stats": [
+            "Height: 6'2\"",
+            "Weight: 210 lbs",
+            "Year: Sophomore"
+        ]
+    },
+    {
+        "_id": 25,
+        "img_name": "DeVonta Smith .webp",
+        "name": "DeVonta Smith",
+        "position": "Husky (Nickel)",
+        "number": 9,
+        "location": "Cincinnati, OH",
+        "stats": [
+            "Height: 6'0\"",
+            "Weight: 195 lbs",
+            "Year: Junior"
+        ]
+    }
+]
