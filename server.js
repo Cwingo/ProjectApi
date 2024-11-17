@@ -1,78 +1,62 @@
+// server.js
 const express = require('express');
-const cors = require('cors'); // Import CORS middleware
+const cors = require('cors');
+const Joi = require('joi');
 const path = require('path');
-const Joi = require('joi'); // Import Joi for validation
 
 const app = express();
 const PORT = process.env.PORT || 3001;
 
-// Enable CORS for local development and deployed React site
+// Middleware
 app.use(cors({
     origin: [
         'http://localhost:3004', // React development environment
-        'https://cwingo.github.io/ReactSite', // Deployed React site
+        'https://cwingo.github.io/ReactSite' // Deployed React site
     ],
-    methods: ['GET', 'POST'], // Allow only GET and POST requests
-    allowedHeaders: ['Content-Type'], // Allow specific headers
+    methods: ['GET', 'POST'],
+    allowedHeaders: ['Content-Type']
 }));
-
-// Middleware for parsing JSON
 app.use(express.json());
 
-// In-memory data storage (replace with a database in production)
-let roster = [];
-let schedule = [];
+// Data storage (mock database)
+const roster = [];
+const schedule = [
+    { id: 1, team: 'Team A', date: '2024-01-01', location: 'Stadium A', result: 'Win' },
+    { id: 2, team: 'Team B', date: '2024-02-01', location: 'Stadium B', result: 'Loss' }
+];
 
-// Joi schemas for validation
-const rosterSchema = Joi.object({
-    name: Joi.string().min(3).required(),
-    position: Joi.string().required(),
-    location: Joi.string().required(),
-    stats: Joi.array().items(Joi.string().required()).min(1).required(),
+// Validation schemas
+const playerValidationSchema = Joi.object({
+    name: Joi.string().min(2).max(100).required(),
+    position: Joi.string().min(2).max(50).required(),
+    location: Joi.string().min(2).max(100).required(),
+    stats: Joi.array().items(Joi.string().required()).required()
 });
 
-const scheduleSchema = Joi.object({
-    team: Joi.string().min(3).required(),
-    date: Joi.string().required(),
-    location: Joi.string().required(),
-    result: Joi.string().allow('').optional(),
-});
-
-// API endpoints
-app.get('/api/schedule', (req, res) => {
-    res.json(schedule);
-});
-
-app.post('/api/schedule', (req, res) => {
-    const { error } = scheduleSchema.validate(req.body);
-    if (error) {
-        return res.status(400).json({ error: error.details[0].message });
-    }
-    const newGame = { id: Date.now(), ...req.body };
-    schedule.push(newGame);
-    res.status(201).json(newGame);
-});
-
+// API Endpoints
 app.get('/api/roster', (req, res) => {
     res.json(roster);
 });
 
 app.post('/api/roster', (req, res) => {
-    const { error } = rosterSchema.validate(req.body);
+    const { error } = playerValidationSchema.validate(req.body);
     if (error) {
         return res.status(400).json({ error: error.details[0].message });
     }
+
     const newPlayer = { id: Date.now(), ...req.body };
     roster.push(newPlayer);
-    res.status(201).json(newPlayer);
+    res.status(201).json({ message: 'Player added successfully', player: newPlayer });
 });
 
-// Serve the index.html file for the root route
-app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname, 'public', 'index.html'));
+app.get('/api/schedule', (req, res) => {
+    res.json(schedule);
 });
 
-// Serve React app for unknown routes
+// Serve static files
+app.use(express.static(path.join(__dirname, 'public')));
+
+// Fallback to index.html for React routing
 app.get('*', (req, res) => {
     res.sendFile(path.resolve(__dirname, 'public', 'index.html'));
 });
